@@ -1,0 +1,235 @@
+
+duInitMalloc
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Free at 0x601523550078, size 1000
+String: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free list:
+Free block at 0x601523550078, size, 1000.
+ManagedList
+
+duMalloc a0
+a0 memory addres is: 0x601523550880
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 128
+Free at 0x601523550110, size 848
+String: AAAAAAAAAAAAAAAAAAAbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free list:
+Free block at 0x601523550110, size, 848.
+ManagedList
+ManagedList[0] = 0x601523550078
+
+duMalloc a1
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Free at 0x601523550148, size 792
+String: AAAAAAAAAAAAAAAAAAABBBBBBBcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free list:
+Free block at 0x601523550148, size, 792.
+ManagedList
+ManagedList[0] = 0x601523550078
+ManagedList[1] = 0x601523550110
+
+Memory access is: Denver
+
+duMalloc a2
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Used at 0x601523550148, size 80
+Free at 0x6015235501b0, size 688
+String: AAAAAAAAAAAAAAAAAAABBBBBBBCCCCCCCCCCCCCddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x6015235501b0, size, 688.
+ManagedList
+ManagedList[0] = 0x601523550078
+ManagedList[1] = 0x601523550110
+ManagedList[2] = 0x601523550148
+
+duMalloc a3
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Used at 0x601523550148, size 80
+Used at 0x6015235501b0, size 72
+Free at 0x601523550210, size 592
+String: AAAAAAAAAAAAAAAAAAABBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Free list:
+Free block at 0x601523550210, size, 592.
+ManagedList
+ManagedList[0] = 0x601523550078
+ManagedList[1] = 0x601523550110
+ManagedList[2] = 0x601523550148
+ManagedList[3] = 0x6015235501b0
+
+duMalloc a4
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Used at 0x601523550148, size 80
+Used at 0x6015235501b0, size 72
+Used at 0x601523550210, size 88
+Free at 0x601523550280, size 480
+String: AAAAAAAAAAAAAAAAAAABBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDEEEEEEEEEEEEEEfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Free list:
+Free block at 0x601523550280, size, 480.
+ManagedList
+ManagedList[0] = 0x601523550078
+ManagedList[1] = 0x601523550110
+ManagedList[2] = 0x601523550148
+ManagedList[3] = 0x6015235501b0
+ManagedList[4] = 0x601523550210
+
+duFree a0
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Free at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Used at 0x601523550148, size 80
+Used at 0x6015235501b0, size 72
+Used at 0x601523550210, size 88
+Free at 0x601523550280, size 480
+String: aaaaaaaaaaaaaaaaaaaBBBBBBBCCCCCCCCCCCCCDDDDDDDDDDDDEEEEEEEEEEEEEEfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Free list:
+Free block at 0x601523550078, size, 128.
+Free block at 0x601523550280, size, 480.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550110
+ManagedList[2] = 0x601523550148
+ManagedList[3] = 0x6015235501b0
+ManagedList[4] = 0x601523550210
+
+duFree a2
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Free at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Free at 0x601523550148, size 80
+Used at 0x6015235501b0, size 72
+Used at 0x601523550210, size 88
+Free at 0x601523550280, size 480
+String: aaaaaaaaaaaaaaaaaaaBBBBBBBcccccccccccccDDDDDDDDDDDDEEEEEEEEEEEEEEfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Free list:
+Free block at 0x601523550078, size, 128.
+Free block at 0x601523550148, size, 80.
+Free block at 0x601523550280, size, 480.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550110
+ManagedList[2] = (nil)
+ManagedList[3] = 0x6015235501b0
+ManagedList[4] = 0x601523550210
+
+duFree a3
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Free at 0x601523550078, size 128
+Used at 0x601523550110, size 32
+Free at 0x601523550148, size 80
+Free at 0x6015235501b0, size 72
+Used at 0x601523550210, size 88
+Free at 0x601523550280, size 480
+String: aaaaaaaaaaaaaaaaaaaBBBBBBBcccccccccccccddddddddddddEEEEEEEEEEEEEEfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Free list:
+Free block at 0x601523550078, size, 128.
+Free block at 0x601523550148, size, 80.
+Free block at 0x6015235501b0, size, 72.
+Free block at 0x601523550280, size, 480.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550110
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x601523550210
+
+********* MINOR COLLECTION ***********
+MEMORY DUMP
+Current Heap: 1
+Memory Block:
+Used at 0x601523550478, size 32
+Used at 0x6015235504b0, size 88
+Free at 0x601523550520, size 856
+String: AAAAAAABBBBBBBBBBBBBBcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free list:
+Free block at 0x601523550520, size, 856.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550478
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x6015235504b0
+
+Memory access is: Denver
+
+duMalloc a5
+MEMORY DUMP
+Current Heap: 1
+Memory Block:
+Used at 0x601523550478, size 32
+Used at 0x6015235504b0, size 88
+Used at 0x601523550520, size 64
+Free at 0x601523550578, size 768
+String: AAAAAAABBBBBBBBBBBBBBCCCCCCCCCCCddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x601523550578, size, 768.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550478
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = 0x6015235504b0
+ManagedList[5] = 0x601523550520
+
+duFree a4
+MEMORY DUMP
+Current Heap: 1
+Memory Block:
+Used at 0x601523550478, size 32
+Free at 0x6015235504b0, size 88
+Used at 0x601523550520, size 64
+Free at 0x601523550578, size 768
+String: AAAAAAAbbbbbbbbbbbbbbCCCCCCCCCCCddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x6015235504b0, size, 88.
+Free block at 0x601523550578, size, 768.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550478
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = (nil)
+ManagedList[5] = 0x601523550520
+
+********* MINOR COLLECTION ***********
+MEMORY DUMP
+Current Heap: 0
+Memory Block:
+Used at 0x601523550078, size 32
+Used at 0x6015235500b0, size 64
+Free at 0x601523550108, size 880
+String: AAAAAAABBBBBBBBBBBccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free list:
+Free block at 0x601523550108, size, 880.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x601523550078
+ManagedList[2] = (nil)
+ManagedList[3] = (nil)
+ManagedList[4] = (nil)
+ManagedList[5] = 0x6015235500b0

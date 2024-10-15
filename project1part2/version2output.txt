@@ -1,0 +1,84 @@
+
+duInitMalloc
+MEMORY DUMP
+Block list:
+Free at 0x5b541bd79078, size 1000
+String: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free list:
+Free block at 0x5b541bd79078, size, 1000.
+ManagedList
+
+duMalloc a0
+a0 memory addres is: 0x5b541bd79480
+MEMORY DUMP
+Block list:
+Used at 0x5b541bd79078, size 48
+Free at 0x5b541bd790c0, size 928
+String: AAAAAAAAAbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free list:
+Free block at 0x5b541bd790c0, size, 928.
+ManagedList
+ManagedList[0] = 0x5b541bd79078
+
+Memory access is: Denver
+
+duFree a0
+MEMORY DUMP
+Block list:
+Free at 0x5b541bd79078, size 48
+Free at 0x5b541bd790c0, size 928
+String: aaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free list:
+Free block at 0x5b541bd79078, size, 48.
+Free block at 0x5b541bd790c0, size, 928.
+ManagedList
+ManagedList[0] = (nil)
+
+duMalloc a1
+MEMORY DUMP
+Block list:
+Free at 0x5b541bd79078, size 48
+Used at 0x5b541bd790c0, size 64
+Free at 0x5b541bd79118, size 840
+String: aaaaaaaaaBBBBBBBBBBBcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free list:
+Free block at 0x5b541bd79078, size, 48.
+Free block at 0x5b541bd79118, size, 840.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5b541bd790c0
+
+Memory access is: Denver
+
+duMalloc a2
+MEMORY DUMP
+Block list:
+Free at 0x5b541bd79078, size 48
+Used at 0x5b541bd790c0, size 64
+Used at 0x5b541bd79118, size 80
+Free at 0x5b541bd79180, size 736
+String: aaaaaaaaaBBBBBBBBBBBCCCCCCCCCCCCCddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x5b541bd79078, size, 48.
+Free block at 0x5b541bd79180, size, 736.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5b541bd790c0
+ManagedList[2] = 0x5b541bd79118
+
+duFree a2
+MEMORY DUMP
+Block list:
+Free at 0x5b541bd79078, size 48
+Used at 0x5b541bd790c0, size 64
+Free at 0x5b541bd79118, size 80
+Free at 0x5b541bd79180, size 736
+String: aaaaaaaaaBBBBBBBBBBBcccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x5b541bd79078, size, 48.
+Free block at 0x5b541bd79118, size, 80.
+Free block at 0x5b541bd79180, size, 736.
+ManagedList
+ManagedList[0] = (nil)
+ManagedList[1] = 0x5b541bd790c0
+ManagedList[2] = (nil)

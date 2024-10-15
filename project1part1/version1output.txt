@@ -1,0 +1,92 @@
+
+duInitMalloc
+MEMORY DUMP
+Memory Block:
+Free at 0x6176433eb060, size 1008
+String: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Free list:
+Free block at 0x6176433eb060, size, 1008.
+
+duMalloc a0
+MEMORY DUMP
+Memory Block:
+Used at 0x6176433eb060, size 128
+Free at 0x6176433eb0f0, size 864
+String: AAAAAAAAAAAAAAAAAAbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Free list:
+Free block at 0x6176433eb0f0, size, 864.
+
+duMalloc a1
+MEMORY DUMP
+Memory Block:
+Used at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Free at 0x6176433eb120, size 816
+String: AAAAAAAAAAAAAAAAAABBBBBBcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+Free list:
+Free block at 0x6176433eb120, size, 816.
+
+duMalloc a2
+MEMORY DUMP
+Memory Block:
+Used at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Used at 0x6176433eb120, size 80
+Free at 0x6176433eb180, size 720
+String: AAAAAAAAAAAAAAAAAABBBBBBCCCCCCCCCCCCdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+Free list:
+Free block at 0x6176433eb180, size, 720.
+
+duMalloc a3
+MEMORY DUMP
+Memory Block:
+Used at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Used at 0x6176433eb120, size 80
+Used at 0x6176433eb180, size 120
+Free at 0x6176433eb208, size 584
+String: AAAAAAAAAAAAAAAAAABBBBBBCCCCCCCCCCCCDDDDDDDDDDDDDDDDDeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Free list:
+Free block at 0x6176433eb208, size, 584.
+
+duFree a0
+MEMORY DUMP
+Memory Block:
+Free at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Used at 0x6176433eb120, size 80
+Used at 0x6176433eb180, size 120
+Free at 0x6176433eb208, size 584
+String: aaaaaaaaaaaaaaaaaaBBBBBBCCCCCCCCCCCCDDDDDDDDDDDDDDDDDeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Free list:
+Free block at 0x6176433eb060, size, 128.
+Free block at 0x6176433eb208, size, 584.
+
+duFree a2
+MEMORY DUMP
+Memory Block:
+Free at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Free at 0x6176433eb120, size 80
+Used at 0x6176433eb180, size 120
+Free at 0x6176433eb208, size 584
+String: aaaaaaaaaaaaaaaaaaBBBBBBccccccccccccDDDDDDDDDDDDDDDDDeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Free list:
+Free block at 0x6176433eb060, size, 128.
+Free block at 0x6176433eb120, size, 80.
+Free block at 0x6176433eb208, size, 584.
+
+duMalloc a4
+MEMORY DUMP
+Memory Block:
+Free at 0x6176433eb060, size 128
+Used at 0x6176433eb0f0, size 32
+Used at 0x6176433eb120, size 40
+Free at 0x6176433eb158, size 24
+Used at 0x6176433eb180, size 120
+Free at 0x6176433eb208, size 584
+String: aaaaaaaaaaaaaaaaaaBBBBBBCCCCCCCdddddEEEEEEEEEEEEEEEEEfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Free list:
+Free block at 0x6176433eb060, size, 128.
+Free block at 0x6176433eb158, size, 24.
+Free block at 0x6176433eb208, size, 584.
